@@ -1,0 +1,1153 @@
+* {
+  margin: 0%;
+}
+
+body {
+  background-color: #d7dce6;
+}
+
+p {
+  cursor: default;
+}
+h1 {
+  cursor: default;
+}
+h2 {
+  cursor: default;
+}
+h3 {
+  cursor: default;
+}
+h4 {
+  cursor: default;
+}
+h5 {
+  cursor: default;
+}
+h6 {
+  cursor: default;
+}
+/* Navigation of the page */
+/* ------------------------- */
+#navigation_id {
+  width: 100%;
+  height: 45px;
+  background-color: black;
+  opacity: 0.8;
+}
+
+#navigation_ul {
+  color: white;
+  list-style: none;
+  display: inline-block;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: -15px;
+  font-weight: 600;
+}
+
+#Magic_Note {
+  display: inline-block;
+}
+
+#Home {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#nav_search {
+  position: absolute;
+  left: 80vw;
+  border-radius: 5px;
+  height: 25px;
+  margin-top: -27px;
+}
+
+#nav_search::placeholder {
+  padding-left: 7px;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#nav_submit {
+  border-color: #3eb9b4;
+  border-radius: 3px;
+  border-width: 1px 2px 2px 1px;
+  background-color: black;
+  position: absolute;
+  left: 94vw;
+  color: #3eb9b4;
+  background-color: #08131d;
+  height: 25px;
+  margin-top: -24px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navigation_body {
+  width: 100%;
+  height: 55px;
+  background-color: black;
+}
+
+/* Body of the page */
+/* editing calculator title of the page */
+:root {
+  --frame_color_of_blue-: #000c5abf;
+  --body_color-: white;
+  --upper_part_shadow_color-: #e8e3e3;
+  --screen_border_color-: #dcd6d6;
+  --shift_mode_title_color-: #d27d00;
+  --alpha_mode_title_color: #af0000;
+  --number_mode-title_color: rgb(2, 78, 2);
+  --del_ac_color-: #f76700;
+  --screen_text_color: black;
+  --background_screen_color-: #6093da9c;
+}
+
+#calcualtior_title {
+  text-decoration: underline;
+  font-family: Bigshot One;
+  font-weight: 100;
+  color: var(--frame_color_of_blue-);
+  text-align: center;
+  position: relative;
+  left: 9px;
+  margin-top: 3px;
+}
+/*  frame of the calculator */
+#main_calculator {
+  width: 370px;
+  height: 578px;
+  background-color: var(--frame_color_of_blue-);
+  position: relative;
+  left: calc(38%);
+  margin-top: 10px;
+  border-radius: 30px 30px 90px 90px;
+  box-shadow: -22px 4px 48px -18px black, 0px 0px 8px 0px #5e94ec inset;
+}
+
+/* main body of the calculator */
+/*  desigining shape of the body */
+#upper_part {
+  /* border: 2px solid red; */
+  width: 350px;
+  height: 221px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--body_color-);
+  border-radius: 20px 20px 70px 70px;
+  z-index: 3;
+}
+#middle_part {
+  /* border: 2px solid red; */
+  width: 327px;
+  height: 156px;
+  position: absolute;
+  top: 231px;
+  left: 22px;
+  background-color: var(--body_color-);
+  border-radius: 0px 0px 0px 0px;
+  box-shadow: 7px 3px 109px -9px #efe0e0 inset;
+  z-index: 2;
+}
+#lower_part {
+  /* border: 2px solid red; */
+  width: 327px;
+  height: 186px;
+  position: absolute;
+  top: 387px;
+  left: 22px;
+  background-color: var(--body_color-);
+  border-radius: 0px 0px 65px 65px;
+  box-shadow: 7px 3px 109px -9px #efe0e0 inset;
+}
+
+#up_mid_rotate_part_right {
+  /* border: 2px solid red; */
+  width: 200px;
+  height: 315px;
+  position: absolute;
+  top: 51px;
+  left: 157px;
+  background-color: var(--body_color-);
+  border-radius: 20px 121px 53px 70px;
+  transform: rotate(4deg);
+}
+
+#up_mid_rotate_part_left {
+  /* border: 2px solid red; */
+  width: 200px;
+  height: 315px;
+  position: absolute;
+  top: 51px;
+  left: 13px;
+  background-color: var(--body_color-);
+  border-radius: 121px 20px 70px 38px;
+  transform: rotate(-4deg);
+}
+
+/* ------------------------- */
+/* upper body part border */
+
+#upper_part_outer_border {
+  width: 335px;
+  height: 221px;
+  margin-left: 8px;
+  position: absolute;
+  top: 3px;
+  background-color: var(--body_color-);
+  border-radius: 0px 0px 65px 65px;
+  background-color: #f1eaea;
+  box-shadow: -8px 4px 7px -3px var(--upper_part_shadow_color-),
+    0px 1px 1px 1px #544343 inset;
+}
+#upper_part_inner_border {
+  width: 329px;
+  height: 219px;
+  position: absolute;
+  top: 3px;
+  margin-left: 11px;
+  background-color: var(--body_color-);
+  border-radius: 0px 0px 65px 65px;
+  box-shadow: 0px 1px 1px 1px #736e6e;
+}
+
+/* inserting upper part big button body */
+
+#upper_part_insert_round_big_button_outer_border {
+  width: 146px;
+  height: 200px;
+  position: absolute;
+  top: 52px;
+  left: 93px;
+  border-radius: 66px;
+  box-shadow: 0px 1px 1px 1px #544343 inset;
+}
+#upper_part_insert_round_big_button_inner_border {
+  width: 144px;
+  height: 200px;
+  position: absolute;
+  bottom: 3px;
+  left: 1px;
+  border-radius: 66px;
+  box-shadow: 0px 1px 1px 1px #736e6e;
+}
+
+/* upper part big button body */
+#big_button_outer_body {
+  /* border: 1px solid red; */
+  width: 134px;
+  height: 60px;
+  position: absolute;
+  top: 170px;
+  left: 96px;
+  border-radius: 40px;
+  background-color: white;
+  /* z-index: 1; */
+}
+
+#big_button_inner_body {
+  width: 134px;
+  height: 60px;
+  border-radius: 40px;
+}
+
+/* upper part body content */
+
+/* upper_part_upper_section_body */
+#upper_part_upper_section_body {
+  /* border: 1px solid black; */
+  border-radius: 10px 10px 0px 0px;
+  margin: 0px 10px 0px 10px;
+  height: 70px;
+  position: relative;
+  box-shadow: -8px 4px 16px 0px var(--upper_part_shadow_color-),
+    3px 0px 14px 0px var(--upper_part_shadow_color-) inset;
+}
+#upper_part_solar_panal_outer {
+  /* border: 1px solid red; */
+  margin: 5px;
+  position: absolute;
+  left: 132px;
+  top: 1px;
+  width: 166px;
+  height: 45px;
+  border-radius: 11px;
+  box-shadow: 1px 1px 9px 2px #423636 inset;
+}
+#upper_part_solar_panal_inner {
+  margin: 2px 0px 0px 3px;
+  width: 159px;
+  height: 39px;
+  border-radius: 10px;
+  background-color: #610909a8;
+}
+#casio_title {
+  margin: 5px 0px 5px 10px;
+  font-family: Bigshot One;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+#fx_991ES_PLUS {
+  margin: 0px 0px 0px 8px;
+}
+#nATURAL_V_A_P_M {
+  margin: 0px 0px 0px 5px;
+  display: inline-block;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(0, 104, 0);
+}
+#TWO_WAY_POWER {
+  margin: 0px 0px 0px 5px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  left: 202px;
+}
+
+/* upper_screen_part */
+#upper_part_screen_outer_part {
+  border-width: 1px;
+  border-color: var(--screen_border_color-);
+  border-style: groove groove none groove;
+  border-radius: 7px 7px 25px 25px;
+  margin: 0px 10px 0px 10px;
+  height: 85px;
+  box-shadow: -8px 4px 16px 0px var(--upper_part_shadow_color-),
+    0px -3px 10px 0px var(--upper_part_shadow_color-) inset;
+}
+#upper_part_screen_outer_part_rotate_right {
+  border-width: 1px;
+  border-color: var(--screen_border_color-);
+  border-style: none none double none;
+  border-radius: 0px 0px 5px 20px;
+  margin: 7px 1px 0px 10px;
+  height: 83px;
+  width: 150px;
+  transform: rotate(2deg);
+  box-shadow: -8px 9px 21px 0px var(--upper_part_shadow_color-),
+    0px -9px 1px 0px white inset;
+}
+#upper_part_screen_outer_part_rotate_left {
+  border-width: 1px;
+  border-color: var(--screen_border_color-);
+  border-style: none none double none;
+  border-radius: 0px 0px 20px 5px;
+  margin: 4px 0px 1px 69px;
+  height: 83px;
+  width: 150px;
+  position: absolute;
+  bottom: 51px;
+  left: 86px;
+  transform: rotate(-2deg);
+  box-shadow: 10px 8px 16px 0px var(--upper_part_shadow_color-),
+    0px -5px 16px 2px white inset;
+}
+#upper_part_screen_middle_part {
+  border: 1px solid var(--screen_border_color-);
+  height: 70px;
+  width: 285px;
+  position: relative;
+  bottom: 88px;
+  left: 10px;
+  border-radius: 7px;
+  box-shadow: 0px -2px 7px 1px #777777;
+}
+#upper_part_screen_inner_part {
+  width: 100%;
+  height: 100%;
+  background-color: var(--background_screen_color-);
+  border-radius: 7px;
+}
+
+/* button */
+/* upper part small button */
+input:focus {
+  outline: 0px;
+}
+
+.upper_body_part_button_title {
+  font-size: 10px;
+  position: absolute;
+  font-weight: bold;
+}
+
+.upper_part_small_button {
+  background-color: var(--frame_color_of_blue-);
+  border-radius: 20px 10px 10px 20px;
+  width: 34px;
+  height: 23px;
+  border-width: 1px;
+  cursor: pointer;
+}
+#shift_button_title {
+  top: 165px;
+  left: 27px;
+  color: var(--shift_mode_title_color-);
+}
+
+#shift_button {
+  position: relative;
+  left: 22px;
+  top: 18px;
+  transform: rotate(10deg);
+  box-shadow: -3px 3px 11px -1px #1d1b1b;
+}
+#alpha_button_title {
+  top: 169px;
+  left: 71px;
+  color: var(--alphe_mode_title_color);
+}
+#alpha_button {
+  position: relative;
+  left: 34px;
+  top: 24px;
+  transform: rotate(8deg);
+  z-index: 1;
+  box-shadow: -3px 3px 11px -1px #1d1b1b;
+}
+#mode_button_title {
+  top: 165px;
+  left: 215px;
+}
+#setup_button_title {
+  top: 175px;
+  left: 238px;
+  color: var(--shift_mode_title_color-);
+}
+#mode_button {
+  position: relative;
+  left: 142px;
+  top: 26px;
+  transform: rotate(175deg);
+  z-index: 1;
+  box-shadow: 3px -3px 11px -1px #1d1b1b;
+}
+#on_button_title {
+  top: 165px;
+  left: 280px;
+}
+#on_button {
+  position: relative;
+  left: 156px;
+  top: 21px;
+  transform: rotate(170deg);
+  box-shadow: 3px -3px 11px -1px #1d1b1b;
+}
+#replay_big_button_inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: var(--frame_color_of_blue-);
+  box-shadow: -1px 1px 13px 10px #ffffff33 inset;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0px;
+  cursor: pointer;
+}
+#replay_big_button_outer {
+  width: 84px;
+  height: 64px;
+  border-radius: 100%;
+  position: relative;
+  border: 2px solid #000000cc;
+  top: 125px;
+  left: 30px;
+  z-index: 1;
+  box-shadow: -6px 2px 10px 0px #b7aaaa;
+}
+.big_button_arrow {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  display: inline-block;
+  position: absolute;
+}
+#big_button_left_arrow {
+  left: 63px;
+  top: 23px;
+  cursor: pointer;
+}
+#big_button_up_arrow {
+  left: 36px;
+  cursor: pointer;
+  top: 8px;
+}
+#big_button_right_arrow {
+  top: 23px;
+  left: 6px;
+  cursor: pointer;
+}
+#big_button_down_arrow {
+  left: 36px;
+  top: 37px;
+  cursor: pointer;
+}
+
+/* -------------------------------------------- */
+/* middle body part */
+/* middle body part sub title part */
+/* Class */
+.middle_body_part_sub_button_shift_mode_title {
+  font-size: 10px;
+  text-align: center;
+  color: var(--shift_mode_title_color-);
+  display: inline-block;
+  position: absolute;
+}
+
+.middle_body_part_ceiling_symbol {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--number_mode-title_color);
+  position: absolute;
+}
+.middle_body_part_sub_button_alpha_mode_title {
+  display: inline-block;
+  color: var(--alpha_mode_title_color);
+  font-size: 12px;
+  font-weight: 800;
+  position: absolute;
+}
+.middle_body_part_sub_button_number_mode_title {
+  display: inline-block;
+  color: var(--number_mode-title_color);
+  font-size: 11px;
+  position: absolute;
+}
+.middle_body_part_sub_button_I_mode_title {
+  display: inline-block;
+  color: var(--number_mode-title_color);
+  font-size: 15px;
+  position: absolute;
+}
+/* Id */
+#Solve {
+  bottom: 141px;
+  left: 2px;
+}
+#Solve_equals_to {
+  bottom: 137px;
+  left: 38px;
+  font-size: 15px;
+}
+#derivative {
+  bottom: 138px;
+  left: 62px;
+  font-size: 12px;
+  font-weight: 800;
+}
+#x_exclamation_mark {
+  bottom: 137px;
+  left: 240px;
+  font-size: 17px;
+  font-weight: 800;
+}
+#summation {
+  bottom: 140px;
+  left: 292px;
+  font-size: 12px;
+  font-weight: 800;
+}
+#division_title {
+  bottom: 100px;
+  left: 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+#cube_root {
+  bottom: 99px;
+  left: 72px;
+  font-size: 13px;
+  font-weight: 600;
+}
+#x_to_the_power_3 {
+  bottom: 99px;
+  left: 117px;
+  font-size: 17px;
+  font-weight: 700;
+}
+#DEC {
+  bottom: 102px;
+  left: 134px;
+  font-size: 11px;
+  font-weight: 700;
+}
+#Root_under {
+  bottom: 100px;
+  left: 159px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#HEX {
+  bottom: 102px;
+  left: 191px;
+  font-size: 11px;
+  font-weight: 700;
+}
+#ten_to_the_power {
+  bottom: 100px;
+  left: 221px;
+  font-size: 12px;
+  font-weight: 700;
+}
+#BIN {
+  bottom: 102px;
+  left: 249px;
+  font-size: 11px;
+  font-weight: 700;
+}
+#e_to_the_power {
+  bottom: 100px;
+  left: 275px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#OCT {
+  bottom: 102px;
+  left: 300px;
+  font-size: 11px;
+  font-weight: 700;
+}
+#Z_opening_ceiling {
+  bottom: 63px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+#Z {
+  bottom: 60px;
+  left: 16px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#Z_closing_ceiling {
+  bottom: 63px;
+  left: 23px;
+  font-size: 12px;
+  font-weight: 700;
+}
+#A_opening_ceiling {
+  bottom: 63px;
+  left: 31px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#A {
+  bottom: 65px;
+  left: 35px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#A_closing_ceiling {
+  bottom: 63px;
+  left: 44px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#left_arrow1 {
+  bottom: 61px;
+  left: 62px;
+  font-size: 19px;
+  font-weight: 900;
+}
+#B_opening_ceiling {
+  bottom: 63px;
+  left: 82px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#B {
+  bottom: 64px;
+  left: 87px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#B_closing_ceiling {
+  bottom: 63px;
+  left: 96px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#Abs {
+  bottom: 62px;
+  left: 112px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#C_opening_ceiling {
+  bottom: 63px;
+  left: 136px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#C {
+  bottom: 64px;
+  left: 141px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#C_closing_ceiling {
+  bottom: 63px;
+  left: 150px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#sin_to_the_power_minus_1 {
+  bottom: 62px;
+  left: 143px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#D_opening_ceiling {
+  bottom: 63px;
+  left: 188px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#D {
+  bottom: 64px;
+  left: 194px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#D_closing_ceiling {
+  bottom: 63px;
+  left: 203px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#cos_to_the_power_minus_1 {
+  bottom: 62px;
+  left: 219px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#E_opening_ceiling {
+  bottom: 63px;
+  left: 245px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#E {
+  bottom: 64px;
+  left: 251px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#E_closing_ceiling {
+  bottom: 63px;
+  left: 259px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#tan_to_the_power_minus_1 {
+  bottom: 62px;
+  left: 275px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#F_opening_ceiling {
+  bottom: 63px;
+  left: 302px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#F {
+  bottom: 64px;
+  left: 307px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#F_closing_ceiling {
+  bottom: 63px;
+  left: 314px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#STO {
+  bottom: 24px;
+  left: 13px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#left_arrow2 {
+  bottom: 22px;
+  left: 59px;
+  font-size: 20px;
+  font-weight: 800;
+}
+#I {
+  bottom: 24px;
+  left: 90px;
+  font-size: 14px;
+  font-weight: 700;
+}
+#percentage {
+  bottom: 24px;
+  left: 127px;
+  font-size: 14px;
+  font-weight: 700;
+}
+#comma {
+  bottom: 27px;
+  left: 179px;
+  font-size: 22px;
+  font-weight: 900;
+}
+#X {
+  bottom: 24px;
+  left: 196px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#division_swap {
+  bottom: 27px;
+  left: 206px;
+  font-size: 11px;
+  font-weight: 600;
+}
+#Y {
+  bottom: 24px;
+  left: 262px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#M_minus {
+  bottom: 24px;
+  left: 280px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#M {
+  bottom: 24px;
+  left: 306px;
+  font-size: 13px;
+  font-weight: 700;
+}
+/* middle body part button */
+#table_of_middle_body_part {
+  table-layout: fixed;
+  margin-top: 2px;
+  width: 328px;
+  height: 154px;
+  border-collapse: collapse;
+}
+
+.middle_body_part_button {
+  width: 40px;
+  height: 25px;
+  border-radius: 7px 7px 15px 15px;
+  background-color: #2d2222;
+  border-width: 1px;
+  color: white;
+  font-size: x-small;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  top: 7px;
+  left: 5px;
+  box-shadow: -2px 5px 9px 0px #696464;
+  cursor: pointer;
+}
+#integration_button {
+  font-size: 14px;
+}
+#x_to_the_power_minus_1_button {
+  font-size: 14px;
+}
+#log_button {
+  font-size: 11px;
+}
+#division_button {
+  font-size: 15px;
+}
+#root_under_button {
+  font-size: 15px;
+}
+#X_square_button {
+  font-size: 14px;
+}
+#X_to_the_power_button {
+  font-size: 13px;
+}
+#log_button {
+  font-size: 14px;
+}
+#In_button {
+  font-size: 14px;
+}
+#-_button {
+  font-size: 15px;
+}
+#comma_button {
+  font-size: 20px;
+}
+#hyp_button {
+  font-size: 13px;
+}
+#sin_button {
+  font-size: 14px;
+}
+#cos_button {
+  font-size: 14px;
+}
+#tan_button {
+  font-size: 14px;
+}
+#RCL_button {
+  font-size: 12px;
+}
+#ENG_button {
+  font-size: 12px;
+}
+#Opening_bracket_button {
+  font-size: 14px;
+}
+#Closing_bracket_button {
+  font-size: 14px;
+}
+#S_to_D_button {
+  font-size: 10px;
+}
+#M_plus_button {
+  font-size: 12px;
+}
+
+/* -------------------------------------------- */
+/* lower body part */
+/* lower Body part sub button title */
+/* class */
+.lower_body_part_sub_button_shift_mode_title {
+  font-size: 10px;
+  text-align: center;
+  color: var(--shift_mode_title_color-);
+  display: inline-block;
+  position: absolute;
+  font-weight: 700;
+}
+.lower_body_part_sub_button_alpha_mode_title {
+  display: inline-block;
+  color: var(--alpha_mode_title_color);
+  font-weight: 600;
+  position: absolute;
+}
+.lower_body_part_ceiling_symbol {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--number_mode-title_color);
+  position: absolute;
+}
+
+/* id */
+#CONST {
+  left: 18px;
+  font-size: 10px;
+  bottom: 162px;
+}
+#CONV {
+  left: 88px;
+  font-size: 10px;
+  bottom: 162px;
+}
+#CLR {
+  left: 156px;
+  font-size: 10px;
+  bottom: 162px;
+}
+#INS {
+  left: 222px;
+  font-size: 10px;
+  bottom: 162px;
+}
+#OFF {
+  left: 288px;
+  font-size: 10px;
+  bottom: 162px;
+}
+#MATRIX_opening_ceiling {
+  left: 10px;
+}
+#MAREIX {
+  left: 15px;
+  font-size: 10px;
+  bottom: 121px;
+}
+#MATRIX_closing_ceiling {
+  left: 57px;
+}
+#VECTOR_opening_ceiling {
+  left: 74px;
+}
+#VECTOR {
+  left: 79px;
+  font-size: 10px;
+  bottom: 121px;
+}
+#VECTOR_closing_ceiling {
+  left: 123px;
+}
+#nPr {
+  left: 222px;
+  font-size: 12px;
+  bottom: 116px;
+}
+#nCr {
+  left: 289px;
+  font-size: 12px;
+  bottom: 116px;
+}
+#STAT_opening_ceiling {
+  left: 17px;
+}
+#STAT {
+  left: 24px;
+  font-size: 11px;
+  bottom: 75px;
+}
+#STAT_closing_ceiling {
+  left: 52px;
+}
+#CMPLX_opening_ceiling {
+  left: 78px;
+}
+#CMPLX {
+  left: 83px;
+  font-size: 10px;
+  bottom: 76px;
+}
+#CMPLX_closing_ceiling {
+  left: 119px;
+}
+#BASE_opening_ceiling {
+  left: 148px;
+}
+#BASE {
+  left: 143px;
+  font-size: 10px;
+  bottom: 76px;
+}
+#BASE_closing_ceiling {
+  left: 181px;
+}
+#Pol {
+  left: 224px;
+  font-size: 13px;
+  bottom: 72px;
+}
+#Rec {
+  left: 289px;
+  font-size: 13px;
+  bottom: 72px;
+}
+#Rnd {
+  left: 27px;
+  font-size: 11px;
+}
+#Ran_hashtag {
+  left: 70px;
+  font-size: 11px;
+}
+#Ranint {
+  left: 98px;
+  font-size: 12px;
+  bottom: 28px;
+}
+#PI {
+  left: 150px;
+  bottom: 26px;
+  font-size: 18px;
+}
+#exponential {
+  left: 179px;
+  font-size: 15px;
+  bottom: 28px;
+}
+#DRAG {
+  left: 212px;
+  bottom: 29px;
+  font-size: 11px;
+  font-weight: 600;
+}
+/* lower body part button */
+#table_of_lower_body_part {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 328px;
+  height: 177px;
+  position: absolute;
+  bottom: 15px;
+  right: 4px;
+}
+
+.lower_body_part_button {
+  width: 45px;
+  height: 28px;
+  margin-left: 14px;
+  margin-top: 13px;
+  border-radius: 5px 5px 15px 15px;
+  border-width: 1px;
+  border-color: #888888;
+  font-weight: 700;
+  font-size: larger;
+  text-align: center;
+  box-shadow: -2px 3px 6px 0px #807979;
+  cursor: pointer;
+}
+#DEL_button {
+  background-color: var(--del_ac_color-);
+  font-size: 18px;
+  text-align: left;
+}
+#AC_button {
+  background-color: var(--del_ac_color-);
+}
+#ten_power_x_button {
+  font-size: 15px;
+  text-align: left;
+  letter-spacing: -2px;
+}
+/* ----------------------------------------------------- */
+/* logical part of the project */
+/* main inner screen editing*/
+#upper_part_of_the_main_screen_page {
+  width: 100%;
+  height: 12px;
+  background-color: var(--background_screen_color-);
+  border-radius: 5px 5px 0px 0px;
+  /* border: 1px solid red; */
+}
+#middle_part_of_the_main_screen_page {
+  width: 278px;
+  height: 25px;
+  background-color: var(--background_screen_color-);
+  border-width: 0px;
+  /* border: 1px solid red; */
+}
+#middle_part_of_the_main_screen_page:read-write {
+  font-size: 21px;
+  font-family: "Oswald", sans-serif;
+  padding-left: 5px;
+}
+#lower_part_of_the_main_screen_page {
+  width: 100%;
+  height: 28px;
+  background-color: var(--background_screen_color-);
+  /* position: relative;
+  bottom: 0px; */
+  border-radius: 0px 0px 8px 8px;
+  /* border: 1px solid red; */
+}
+#lower_part_of_the_main_screen_page_content {
+  font-size: 21px;
+  text-align: right;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  padding: 0px 5px 0px 5px;
+}
